@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_album"
+        android:icon="@drawable/albumicon"
+        android:title="ALBUM" />
+    <item
+        android:id="@+id/nav_start"
+        android:icon="@drawable/start_1"
+        android:title="START" />
+    <item
+        android:id="@+id/nav_rate"
+        android:icon="@drawable/rateicon"
+        android:title="RATE" />
+
+
+</group>
+
+<item android:title="Communicate">
+    <menu>
+        <item
+            android:id="@+id/nav_Share"
+            android:icon="@drawable/share"
+            android:title="SHARE" />
+
+        <item
+            android:id="@+id/nav_moreapps"
+            android:icon="@drawable/moreicon1"
+            android:title="More Apps" />
+
+
+        <item
+            android:id="@+id/nav_Exit"
+            android:icon="@drawable/logouticon"
+            android:title="EXIT" />
+
+
+    </menu>
+</item>
+</menu>

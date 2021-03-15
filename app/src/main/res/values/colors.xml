@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#a02b8a</color>
+    <color name="colorPrimaryDark">#696E79</color>
+    <color name="colorAccent">#a02b8a</color>
+    <color name="dark">#696E79</color>
+    <color name="ultra_dark_overlay">#0D29303F</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="brightness_bg">#00ffffff</color>
+    <color name="transpernt">#00ffffff</color>
+    <color name="color_sky">#063970</color>
+    <color name="actionbar">#a02b8a</color>
+    <!-- BackExitDialog -->
+    <color name="custom_txt_whitegray">#D5D5D5</color>
+
+</resources>

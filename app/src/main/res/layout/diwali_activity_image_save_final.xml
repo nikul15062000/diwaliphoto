@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.percentlayout.widget.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:id="@+id/ll_Header"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/dark"
+                android:paddingBottom="@dimen/value_10"
+                android:paddingTop="@dimen/value_10"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.10">
+
+                    <ImageView
+                        android:id="@+id/iv_Back_Save"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="0.51"
+                        android:padding="5dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_back1"
+                        app:tint="@color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.80"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Share"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_25"
+                        android:textStyle="italic" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0.10"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iv_Home"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#ffffff"
+                        android:layout_gravity="center"
+                        android:padding="5dp"
+                        android:src="@drawable/home1"
+                        app:tint="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/r1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border2"
+                >
+                <LinearLayout
+                    android:id="@+id/native_ad_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="3dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/llImg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_heightPercent="50%"
+                app:layout_widthPercent="100%"
+                android:layout_below="@+id/ll_Header"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+                <!-- set created image here-->
+
+
+                <ImageView
+                    android:id="@+id/iv_Show_Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/backgroundimage" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@+id/llImg"
+                android:layout_weight="1"
+                android:src="@drawable/ad_line"
+                app:layout_heightPercent="2%" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_heightPercent="40%"
+                app:layout_widthPercent="100%"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <LinearLayout
+                    android:id="@+id/ll_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/value_5"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/llWhatsApp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_whatsapp"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/value_5"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:src="@drawable/whatsappicon"
+                            app:tint="#000000" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:singleLine="true"
+                            android:text="WhatsApp"
+                            android:textStyle="italic"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_12" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/llFacebook"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_facebook"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_margin="@dimen/value_5"
+                            android:layout_weight="1"
+                            android:src="@drawable/faceboook"
+                            app:tint="#000000" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:singleLine="true"
+                            android:textStyle="italic"
+                            android:text="Facebook"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_12" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llInstagram"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_instagram"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_margin="@dimen/value_5"
+                            android:layout_weight="1"
+                            android:src="@drawable/instagram"
+                            app:tint="#000000" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:singleLine="true"
+                            android:textStyle="italic"
+                            android:text="Instagram"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_12" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/value_5"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/llHike"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_Hike"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/value_5"
+                            android:layout_weight="1"
+                            android:src="@drawable/hike"
+                            app:tint="#000000" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:singleLine="true"
+                            android:textStyle="italic"
+                            android:text="Hike"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_12" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llTwitter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_Twitter"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_margin="@dimen/value_5"
+                            android:layout_weight="1"
+                            android:src="@drawable/twitter"
+                            app:tint="#000000" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:singleLine="true"
+                            android:text="Twitter"
+                            android:textStyle="italic"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_12" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llMore"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_Share_More"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_margin="@dimen/value_5"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:src="@drawable/moreicon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:singleLine="true"
+                            android:textStyle="italic"
+                            android:text="More"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_12" />
+                    </LinearLayout>
+                </LinearLayout>
+              <!--  <com.google.android.gms.ads.AdView
+                    android:id="@+id/adView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    ads:adSize="BANNER"
+                    ads:adUnitId="@string/banner_home_footer">
+
+                </com.google.android.gms.ads.AdView>-->
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.percentlayout.widget.PercentRelativeLayout>

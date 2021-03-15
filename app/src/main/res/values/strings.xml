@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Diwali Dual Photo Frame</string>
+
+    <string name="banner_home_footer">ca-app-pub-1485652035440605/5338780999</string>
+    <string name="interstitial_full_screen">ca-app-pub-1485652035440605/6268719284</string>
+    <string name="Native_Ad_screen">ca-app-pub-1485652035440605/6077147598</string>
+
+    <string name="retake_pic">Retake Picture</string>
+    <string name="from_gallery">From Gallery</string>
+    <string name="txtcancel">Cancel</string>
+    <string name="txtdone">Done</string>
+    <string name="No_Internet">Internet connection is not available.</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="ad_attribution">Ad</string>
+</resources>
